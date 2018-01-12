@@ -1,0 +1,2 @@
+I reported the Kociemba's algorithm too, because this is an optimization needed to let it run on an Android Smartphone.
+Without that optimization, it would arise an error due to the big amounts of RAM used.
