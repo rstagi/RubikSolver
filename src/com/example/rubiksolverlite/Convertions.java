@@ -1,4 +1,4 @@
-package com.example.rubiksolverlite;
+package rubiksolverlite;
 
 import java.util.HashMap;
 
@@ -23,11 +23,11 @@ public abstract class Convertions {
 		//Right (base)
 		convertions.put("R", "OLBP");				//orario
 		convertions.put("R'", "ALBP");				//antiorario
-		convertions.put("R2", get("R")+get("R"));	//180°
+		convertions.put("R2", get("R")+get("R"));	//180Â°
 		//Down (base)
 		convertions.put("D","olbp");				//orario
 		convertions.put("D'", "albp");				//antiorario
-		convertions.put("D2", get("D")+get("D"));	//180°
+		convertions.put("D2", get("D")+get("D"));	//180Â°
 		
 		//Inizio mosse non base
 		String inizio="", fine=""; //mosse iniziali e finali
@@ -35,22 +35,22 @@ public abstract class Convertions {
 		inizio = "lApLBP"; fine = "lOpLBP";
 		convertions.put("F", inizio+get("D")+fine);		//orario
 		convertions.put("F'", inizio+get("D'")+fine);	//antiorario
-		convertions.put("F2", inizio+get("D2")+fine);	//180°
+		convertions.put("F2", inizio+get("D2")+fine);	//180Â°
 		//Left (spostamenti iniziali per averla al posto di Right)
 		inizio = "LoPlbpLoPlbp"; fine = "LaPlbpLaPlbp";
 		convertions.put("L", inizio+get("R")+fine); 	//orario
 		convertions.put("L'", inizio+get("R'")+fine); 	//antiorario
-		convertions.put("L2", inizio+get("R2")+fine); 	//180°
+		convertions.put("L2", inizio+get("R2")+fine); 	//180Â°
 		//Back (spostamenti iniziali per averla al posto di Right)
 		inizio = "LaPlbp"; fine = "LoPlbp";
 		convertions.put("B", inizio+get("R")+fine); 	//orario
 		convertions.put("B'", inizio+get("R'")+fine); 	//antiorario
-		convertions.put("B2", inizio+get("R2")+fine); 	//180°
+		convertions.put("B2", inizio+get("R2")+fine); 	//180Â°
 		//Up (spostamenti iniziali per averla al posto di Down)
 		inizio = "lApLBPlApLBP"; fine = "lOpLBPlOpLBP";
 		convertions.put("U", inizio+get("D")+fine);		//orario
 		convertions.put("U'", inizio+get("D'")+fine);	//antiorario
-		convertions.put("U2", inizio+get("D2")+fine);	//180°
+		convertions.put("U2", inizio+get("D2")+fine);	//180Â°
 		
 	}
 	
