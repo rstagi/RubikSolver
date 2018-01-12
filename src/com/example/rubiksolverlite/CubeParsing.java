@@ -1,4 +1,4 @@
-package com.example.rubiksolverlite;
+package rubiksolverlite;
 
 import org.kociemba.twophase.PruneTableLoader;
 import org.kociemba.twophase.Search;
