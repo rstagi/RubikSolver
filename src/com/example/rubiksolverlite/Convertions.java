@@ -1,4 +1,4 @@
-package rubiksolverlite;
+package com.example.rubiksolverlite;
 
 import java.util.HashMap;
 
